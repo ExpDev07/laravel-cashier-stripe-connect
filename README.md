@@ -163,6 +163,7 @@ Please refer to [LICENSE.md](https://github.com/ExpDev07/laravel-cashier-stripe-
 This list only contains some of the most notable contributors. For the full list, refer to [GitHub's contributors graph](https://github.com/ExpDev07/laravel-cashier-stripe-connect/graphs/contributors).
 * ExpDev07 (Marius) - creator and maintainer.
 * Haytam Bakouane [(hbakouane)](https://github.com/hbakouane) - contributor.
+* Alex Powell [(theblindfrog)](https://github.com/theblindfrog) - contributor.
 
 ## Thanks to
 
