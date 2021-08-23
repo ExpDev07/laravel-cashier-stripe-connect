@@ -44,13 +44,14 @@ trait ManagesTransfer
      * Reverses a transfer back to the Connect Platform. This means the Stripe account will
      *
      * @param Transfer $transfer The transfer to reverse.
-     * @param bool $refundFee Whether to refund the application fee too.
      * @param int|null $amount The amount to reverse.
+     * @param bool $refundFee Whether to refund the application fee too.
      * @param array $options Any additional options.
      * @return TransferReversal
      * @throws AccountNotFoundException|ApiErrorException
      */
-    public function reverseTransferFromStripeAccount(Transfer $transfer, $refundFee = false, ?int $amount, array $options = []): TransferReversal
+    public function reverseTransferFromStripeAccount(Transfer $transfer, ?int $amount, $refundFee = false, array
+    $options = []): TransferReversal
     {
         $this->assertAccountExists();
 
