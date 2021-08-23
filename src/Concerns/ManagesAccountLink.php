@@ -34,7 +34,7 @@ trait ManagesAccountLink
             'account' => $this->stripeAccountId(),
         ], $options);
 
-        return AccountLink::create($options, $this->stripeAccountOptions())->url;
+        return AccountLink::create($options, $this->stripeAccountOptions([], false))->url;
     }
 
     /**

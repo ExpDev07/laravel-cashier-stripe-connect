@@ -30,13 +30,14 @@ trait Billable
      * The default Stripe API options for the current Billable model.
      *
      * @param array $options
+     * @param bool $includeAccountId Should we include the 'stripe_account' key to the options array by default
      * @return array
      */
-    public function stripeAccountOptions(array $options = []): array
+    public function stripeAccountOptions(array $options = [], bool $includeAccountId = true): array
     {
         // Include Stripe Account id if present. This is so we can make requests on the behalf of the account.
         // Read more: https://stripe.com/docs/api/connected_accounts?lang=php.
-        if ($this->hasStripeAccountId()) {
+        if ($this->hasStripeAccountId() && $includeAccountId) {
             $options['stripe_account'] = $this->stripeAccountId();
         }
 
