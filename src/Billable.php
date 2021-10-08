@@ -40,9 +40,9 @@ trait Billable
         if ($sendAsAccount && $this->hasStripeAccountId()) {
             $options['stripe_account'] = $this->stripeAccountId();
         }
-        
-        // Workaround for Cashier 12.x 
-        if (version_compare(Cashier::VERSION, '12.15.0', '<=') {
+
+        // Workaround for Cashier 12.x
+        if (version_compare(Cashier::VERSION, '12.15.0', '<=')) {
             return array_merge(Cashier::stripeOptions($options));
         }
 
