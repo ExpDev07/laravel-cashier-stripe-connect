@@ -8,6 +8,23 @@
 	<a href="https://packagist.org/packages/expdev07/laravel-cashier-stripe-connect"><img src="https://img.shields.io/packagist/l/expdev07/laravel-cashier-stripe-connect" alt="License"></a>
 </p>
 
+> ## Newer Package Available
+> A more comprehensive package is now available, built upon this package so can be upgraded to from this package, it offers multi-model, multi-tenancy support, UUID support and the following features:
+> * Multi Model support - Previously only supported the User model, now any model can have the Connect Billable trait added to it and immediately inherit functionality.
+> * Tenancy for Laravel Support (Multi Tenant SaaS Plugin)
+> * Manage connected account onboarding
+> * Direct Charges
+> * Destination Charges
+> * Connected account customer management (Direct Customers)
+> * Connected account payment method management
+> * Connected account subscriptions ( Direct Subscriptions )
+> * Connected account product & price management
+> * Connect Webhook Support (On behalf of connected accounts)
+> * Connected Account Apple Pay Domain Registering
+>  
+> ### [Click here to access the new package](https://github.com/l4nos/laravel-cashier-stripe-connect)
+> As a result of the new package, this package will no longer be maintained.
+
 <p>
     <a href='https://ko-fi.com/C1C510DUQ' target='_blank'>
 	<img height='36' style='border:0px;height:36px;' src='https://az743702.vo.msecnd.net/cdn/kofi3.png?v=2' border='0' alt='Buy Me a Coffee at ko-fi.com' />
